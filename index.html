@@ -2,11 +2,123 @@
 
 <html lang="en">
     <head>
-        <title>
-            hello, Dear
-        </title>
+        <title>Report Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <style>
+            body {
+              background-image: url('Background.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+            fieldset {
+                margin: 20px;
+                padding: 0 10px 10px;
+                border: 1px solid #666;
+                border-radius: 8px;
+                box-shadow: 0 0 10px #666;
+                padding-top: 10px;
+            }
+
+        </style>
     </head>
-    <body>
-       هنا تكتبون الحل
+    <body">
+        <header>
+            <h1 style="color: #336b87;">We are Sorry if you are not like part of our services...</h1>
+        </header>
+        <main>
+            <form >  
+                <fieldset>
+                    <legend style="color: #763626;"><h2>Your Details</h2></legend>
+                    <div style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #763626; font-size: larger;">
+                        
+                        <label for="fname">Full name: </label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        
+                        <label for="lname">Phone: </label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email"><br><br>
+                        
+                        <label for="RequestDate">Request Date: </label>
+                        <input type="date" id="RequestDate" name="RequestDate"><br><br><br>
+                        
+                        <label for="RequestDate">Decription: </label><br><br>
+                        <textarea name="" id="" cols="30" rows="10"></textarea><br><br>
+                    </div>
+                </fieldset>
+            </form>
+
+            <form >  
+                <fieldset>
+                    <legend style="color: #763626;"><h2>Services Details</h2></legend>
+                    <div style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #763626; font-size: larger;">
+                        <label for="Foods">Choose Item:</label>
+                        <select name="Foods" id="Foods">
+                            <optgroup label="Swedish Foods">
+                              <option value="Burger">Morning shift</option>
+                              <option value="Chiken">Night Shift</option>
+                            </optgroup>
+                            <optgroup label="German Foods">
+                              <option value="Burger">Morning shift</option>
+                              <option value="Chiken">Night Shift</option>
+                            </optgroup>
+                          </select>
+                          <br><br>
+                    </div>
+                    
+                    <table style="border-style: ridge; background-color: burlywood;">
+                        <tr style="border-style: dashed;">
+                          <th style="border-style: dashed;">Meal</th>
+                          <th style="border-style: dashed;">price</th>
+                          <th style="border-style: dashed;">Country</th>
+                          <th style="border-style: dashed;">Cheak</th>
+                        </tr>
+                        <tr>
+                          <td style="border-style: dashed;">Burger</td>
+                          <td style="border-style: dashed;">10$</td>
+                          <td style="border-style: dashed;">Germany</td>
+                          <td style="border-style: dashed;"><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                          <td style="border-style: dashed;">Chicken</td>
+                          <td style="border-style: dashed;">9$</td>
+                          <td style="border-style: dashed;">Germany</td>
+                          <td style="border-style: dashed;"><input type="checkbox"></td>
+                        </tr>
+                        <tr>
+                            <td style="border-style: dashed;">Burger</td>
+                            <td style="border-style: dashed;">10$</td>
+                            <td style="border-style: dashed;">Swedish</td>
+                            <td style="border-style: dashed;"><input type="checkbox"></td>
+                          </tr>
+                          <tr>
+                            <td style="border-style: dashed;">Chicken</td>
+                            <td style="border-style: dashed;">9$</td>
+                            <td style="border-style: dashed;">Swedish</td>
+                            <td style="border-style: dashed;"><input type="checkbox"></td>
+                          </tr>
+                      </table><br><br>
+                    <input type="submit" value="Submit" style="background-color: brown; font-family: 
+                    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                     font-size: larger;">
+                </fieldset>
+            </form>
+        </main>
+        <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Company Name © 2018</p>
+        </footer>
+    </div>
     </body>
 </html>
