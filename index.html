@@ -3,10 +3,123 @@
 <html lang="en">
     <head>
         <title>
-            hello, Dear
+            Good vibes form
         </title>
     </head>
     <body>
-       هنا تكتبون الحل
+        <header>
+            <h1>Good Vibes Form</h1>
+            <p>Tell us somethings positive that happened to you today.</p>
+        </header>
+        <main>
+            <form>
+                <div>
+                    <label for="username">Name</label>
+                    <br>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div>
+                    <label for="number">On a scale of 1-10, how good was it?</label>
+                    <br>
+                    <input type="number" name="number" id="number">
+                </div>
+                <div>
+                    <label for="list">Where did it happen?</label>
+                    <br>
+                    <select name="list" id="list">
+                        <optgroup>
+                            <option value="home">At home</option>
+                            <option value="university">At university</option>
+                            <option value="work">At work</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>At what time of day did it happen?</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;&nbsp;
+                                <label for="t1">Morinng</label>
+                                <input type="radio" name="time" id="t1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;&nbsp;
+                                <label for="t2">Afternoon</label>
+                                <input type="radio" name="time" id="t2">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;&nbsp;
+                                <label for="t3">Evening</label>
+                                <input type="radio" name="time" id="t3">    
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <p>What emotions did you experience?<br>(Select all that apply)</p>
+                    <table>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;
+                                <input type="checkbox" name="emotions" id="em1">
+                                <label for="em1">Excited</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;
+                                <input type="checkbox" name="emotions" id="em2">
+                                <label for="em2">Humbled</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;
+                                <input type="checkbox" name="emotions" id="em3">
+                                <label for="em3">Elated</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;
+                                <input type="checkbox" name="emotions" id="em4">
+                                <label for="em4">Loved</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;
+                                <input type="checkbox" name="emotions" id="em5">
+                                <label for="em5">Enthusiastic</label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </form> 
+        </main>
+        <br>
+        <footer>
+            <form>
+                <div>
+                    <label for="des">Please describe your positive experience.</label>
+                    <br>
+                    <textarea name="describe" id="des" cols="8" rows="4">Enter your experience</textarea>
+                    <br>
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </footer>
     </body>
 </html>
