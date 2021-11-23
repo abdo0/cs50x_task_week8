@@ -1,12 +1,196 @@
 <!DOCTYPE html>
+<html style="background-image: url(https://images8.alphacoders.com/567/567297.jpg)" lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel's Restaurant</title>
+    <style>
+        .button {
+            border: none;
+            color:yellow ;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 28px;
+            margin: 30px 30px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .button1 {
+            background-color:rgb(236, 236, 30); 
+            color: black; 
+            border: 2px solid rgb(236, 236, 30);
+            display: inline-block;
+        }
+          
+        .button1:hover {
+            background-color: white;
+            color: black;
+        }
+    
+        /* .ul {
+            display: list-item;
+            text-align: center;
+        } */
+        
+        .caption {
+            max-height: 180px;
+            max-width: 180px;
+            background-color: rgb(236, 236, 30);
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 3px;
+            padding-right: 3px;
+            align-items:center;
+            float:none;
+            justify-content: center;
+        }
+        .bordered {
+            width: 350px;
+            height: 350px;
+            padding: 20px;
+            border-width: 6px;
+            border-color: yellowgreen;
+            border-style: dotted dashed solid double;
+        }
 
-<html lang="en">
-    <head>
-        <title>
-            hello, Dear
-        </title>
-    </head>
-    <body>
-       هنا تكتبون الحل
-    </body>
+        .caption2 {
+            max-height: 180px;
+            max-width: 180px;
+            background-color: rgb(236, 236, 30);
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 30px;
+            padding-right: 30px;
+            align-items:left;
+            float:right;
+            justify-content: left;
+        }
+
+        .smallbox{
+            background-color: rgb(148, 240, 44);
+            text-align: center;
+            display: grid;
+            padding: 10px;
+            align-items: left;
+            justify-items: left;
+        } 
+
+        .top{
+            display: grid;
+            grid-gap: 20px;
+            grid-template-areas:"bordered";
+        }
+
+        .one{
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            align-content: center;
+        }
+
+        .end{
+            display: grid;
+            grid-gap: 20px;
+            grid-template-areas: "map" "smallbox";
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="text-align: center; color:rgb(148, 240, 44); text-size-adjust: large">𝘼𝙣𝙜𝙚𝙡'𝙨 𝘾𝙎50𝙓 𝙄𝙧𝙖𝙦𝙞 𝙍𝙚𝙨𝙩𝙖𝙪𝙧𝙖𝙣𝙩</h1>
+    <ul id="Menu">
+        <button class="button button1">Dolma</button>
+        <button class="button button1">Kebab</button> 
+        <button class="button button1">Biryani</button> 
+        <button class="button button1">Shawarma</button> 
+        <button class="button button1">Reservations</button>
+    </ul>
+    <br>
+    <section style="padding: 35px">
+        <div class="top">
+            <div class="bordered">
+                <img src="https://i.ytimg.com/vi/k70YeQBRjd0/maxresdefault.jpg" alt="Biryani" width="350" height="350">
+                <br><br><br>
+                <header class="caption">
+                    <div class="box">
+                        <h2>Meat Biryani</h2>
+                    </div>
+                </header> 
+                <br><br><br><br><br><br><br><br>
+            </div>
+            <br><br><br><br><br><br><br>
+            <div class="bordered">
+                <img src="http://www.doctorsreview.com/media/cache/23/50/2350d809116868373f364b2ff7b84509.jpg" alt="Dolma" width="350" height="350">
+                <br><br><br>
+                <header class="caption">
+                    <div class="box">
+                        <h2>Dolma</h2>
+                    </div>
+                </header> 
+                <br><br><br><br><br><br><br><br>
+            </div> 
+            <br><br><br><br><br><br><br>
+    </section> 
+        
+    <section style="padding-left: 700px; padding-right: 35px; padding-top: 20px"> 
+        <div class="bordered">
+            <img src="https://www.abouther.com/sites/default/files/styles/760scale/public/main_-_iraqi_kebab_recipe.jpg?itok=rnz2qHFn" alt="Biryani" width="350" height="350">
+            <br><br><br>
+            <header class="caption2">
+                <div class="box">
+                    <h2>Kebab</h2>
+                </div>
+            </header> 
+            <br><br><br><br><br><br><br><br>
+        </div>
+        <br><br><br><br><br><br><br>
+        <div class="bordered">
+            <img src="https://cdn.al-ain.com/images/2018/7/06/47-153916-iraqi-miskov-fish_700x400.jpeg" alt="Maskoof" width="350" height="350">
+            <br><br><br>
+            <header class="caption2">
+                <div class="box">
+                    <h2>Maskoof</h2>
+                </div>
+            </header> 
+            <br><br><br><br><br><br><br><br>
+        </div> 
+        <br><br><br><br><br><br><br>       
+
+    </section>
+
+    <section>
+        <div class="end">
+            <div class="one box">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3334.678164638637!2d44.43494971467846!3d33.30108176438705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1557819e0096b3af%3A0x6d200cdc90d69565!2zVGhlIFN0YXRpb24gLSDYp9mE2YXYrdi32Kk!5e0!3m2!1sen!2siq!4v1637679295611!5m2!1sen!2siq" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h2 style="color:rgb(148, 240, 44); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large">Visit us!</h2>
+                <br><br>
+                <h3 style="color:rgb(148, 240, 44); font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large">Follow us on social media!</h3>
+                <br>
+                <a href="https://the-station.iq/">Our page</a>
+                <a href="https://www.facebook.com/thestationiq">Our Facebook</a>
+                <a href="https://www.instagram.com/thestationiq/">Our Instagram</a>
+
+
+            </div>
+            <br><br><br>
+            <div class="one smallbox">
+                <h2>12000 IQD</h2>
+                <p style="font:700; font-size: large">For one meat Biryani dish</p>
+                <h2>6000 IQD</h2>
+                <p style="font:700; font-size: large">For a Dolma dish</p>
+                <h2>8000 IQD</h2>
+                <p style="font:700; font-size: large">For one Maskoof fish</p>
+            </div>
+    </section>
+        
+</body>
+<br><br><br>
+<footer>
+    <center style="font-size: large">
+        &copy; <b>Angel's Restaurant- CS50X 2021</b>
+    </center>
+    </footer>
 </html>
