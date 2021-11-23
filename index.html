@@ -7,6 +7,95 @@
         </title>
     </head>
     <body>
-       هنا تكتبون الحل
+        <center><h1>Good Vibes Form</h1></center><br>
+    
+        <h3>Tell us something positive that happened to you today? </h3>
+        <form>
+          <div>
+              <label><b>Name</b></label></div>
+              <input type="text" placeholder="Enter your name" ><br><br>
+              <div>
+              <label><b>Email</b></label></div>
+              <input type="email" placeholder="Enter your email address"><br><br>
+              <div>
+              <label>On a scale of 1-10, how good was it? &nbsp;</label><br></div>
+              <input type="number" min="1" max="10" placeholder="Enter number between 1 and 10"><br><br>
+                <div>
+              <label>Where did it happen? &nbsp;</label></div>
+              <select>
+                  <option value="home">At home</option>
+                  <option value="comm">On my commute</option>
+                  <option value="work">At work</option>
+                  <option value="outside">outside house</option>
+              </select>
+              <br><br>
+            
+              <label>What time of day did it happen? </label>
+  
+              <ul Style="list-style: none;">
+              <li>
+              <label>
+                  morning
+              <input  type="radio" name="time-radio"  value="1">
+              </label></li>
+  
+              <li><label>
+                  afternoon
+              <input  type="radio" name="time-radio"  value="2">
+              </label></li>
+  
+              <li><label>
+                  evening
+              <input type="radio" name="time-radio"  value="3">
+              </label>
+              </li>
+              </ul>
+  
+              <label>
+                 What emotions did you experience?
+               <br>
+                 (Select all that apply)
+              </label>
+              <ul style="list-style: none;">
+                <li>
+                  <label>
+                    <input  type="checkbox" value="1">
+                    excited
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" value="2">
+                    humbled
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" value="3">
+                    elated
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" value="4">
+                    loved
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input  type="checkbox" value="5">
+                    enthusiastic
+                  </label>
+                  </li>
+                  </ul>
+  
+                  <label>
+                      Please describe your positive experience.
+                  </label><br>
+            
+              <textarea  style="height: 50px;"  cols="20" rows="20" placeholder="Enter your experience"></textarea>
+              <br>
+              <button type="submit">Submit</button>
+          </form>
     </body>
 </html>
