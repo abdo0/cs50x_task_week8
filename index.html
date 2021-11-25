@@ -7,6 +7,73 @@
         </title>
     </head>
     <body>
-       هنا تكتبون الحل
+        <h1>Good Vibes Form</h1>
+    <p>Tell us something positive that happened to you today</p>
+    <div>
+        <form action="blabla.php">
+            <label for="">Name:</label>
+            <br>
+            <input id="name" type="text" placeholder="Enter your name">
+            <br>
+            <label for="name">Email:</label>
+            <br>
+            <input id="email" type="email" value="" placeholder="Enter your email address">
+        </form>
+    </div>
+    <div>
+        <label for="number">On a scale of 1-10, how good was it</label>
+        <br>
+        <input id="number" type="number" min="1" max="10" placeholder="Enter a number between 1 and 10">
+    </div>
+    <br>
+    <div> 
+        <label for="where">Where did it happen?</label>
+        <br>
+        <select name="where" id="where">
+            <option value="where">at home</option>
+            <option value="school ">school</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <h3>At what time of day did it happen?</h3>
+        <br>
+        <label for="morning">Morning</label>
+        <input id="morning" type="radio" name="Morning" >
+        <br>
+        <label for="Afternoon">Afternoon</label>
+        <input id="Afternoon" type="radio" name="Afternoon" >
+        <br>
+        <label for="Evening">Evening</label>
+        <input id="Evening" type="radio" name="Evening" >
+    </div>
+    <br>
+    <div>
+        <h3> what smotions did you ecperience? <br> (select all that apply)</h3>
+        <input id="checkbox" type="checkbox">
+        <label for="checkbox">Exited</label>
+        <br>
+        <input id="checkbox" type="checkbox">
+        <label for="checkbox">Humbled</label>
+        <br>
+        <input id="checkbox" type="checkbox">
+        <label for="checkbox">Elated</label>
+        <br>
+        <input id="checkbox" type="checkbox">
+        <label for="checkbox">Loved</label>
+        <br>
+        <input id="checkbox" type="checkbox">
+        <label for="checkbox">Enthusiastic</label>
+    </div>
+    <br>
+    <div>
+        <label for="textarea">please describe your positive experience.</label>
+        <br>
+        <br>
+        <textarea name="textarea" id="textarea" cols="20" rows="4">Enter your experience here</textarea>
+    </div>
+    <div>
+        <input id="submit" type="submit">
+    </div>
     </body>
 </html>
